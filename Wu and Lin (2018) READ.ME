@@ -1,0 +1,35 @@
+Yueh-Hua Wu, Department of Computer Science and Information Engineering, National Taiwan University
+Shou-De Lin, Department of Computer Science and Information Engineering, National Taiwan University
+A Low-Cost Ethics Shaping Approach for Designing Reinforcement Learning Agents 
+Ethical concerns arise when machines conduct tasks that have the potential to violate human codes of conduct. Wu and Lin suggest that reinforcement learning depends on the value of reward inputs, though inadequately designed artificial intelligent systems may reward a task without considering the best ethical approach. Instilling ethics in the rewards function may prove costly as it is difficult to account for all ethical and non-ethical situations, and what constitutes ethical behaviors is subjective and depends on the state of the environment. 
+Prior research suggested rule-based and learning based approaches to ethics in machine learning. Some rule-based approaches included the exclusion of ethical uncertainty in decision making, active learning of ethical rules, and all rules should be rendered in advance (Briggs and Scheutz’s approach). Learning based approaches, can combine reinforcement learning and logical representations, where the agent would prioritize adherence, and maximize the reward function over only those state-action pairs. 
+
+Author’s Approach
+
+Wu and Lin Reconcile Rule-based and Learning-based Approaches:
+The authors proposed an Ethical Shaping algorithm based on Markov Decision Process (MDP), which incorporates human data within a reinforcement learning framework to attain a specific goal with a lowered chance of ethical code violations. The authors used the ethical shaping model to adjust the reward function through the interaction between the reinforcement learning and human policies. Additionally, the authors applied inverse reinforcement learning which can learn an ethical agent and extract the policies of human behavior. 
+Introducing Ethics Shaping
+
+The authors proposed that ethics shaping eliminates the need to compute all possible ethical rules because the policy derived from human data can suggest ethical moves. The reward shaping could integrate prior knowledge into learning problems and update associated rewards; the ethical agent can then bias its’ selection of actions based on what it assesses as good. 
+
+The ethical shaping method included penalties and rewards between the policy of the learning agent and the human policy aggregated from human data. The human data is a set of state-action pairs recorded from human behaviors, and each pair in the data set represented positive human feedback or decisions or negative decisions. 
+
+The authors generated the human policy from human data which integrated human feedback to derive a policy. The feedback would indicate a certain action is optimal is aggregated which is defined as the difference between the number of “right” and “wrong” labels. By assuming is independent of feedback to other actions and that there is only one optimal action in each state, which indicates independence conditions 
+
+Discrepancies between human and reinforcement learning policy then the action is related to ethical issues were categorized as the following: 
+
+• Negative ethical decisions: Represented what machines should not do but do such as cutting in line or hurting people. Mathematically, if the probability for the agent to make certain given the learned policy is higher than that under human policy P rH (a = 1|s), and the chance for human to conduct this action is very low PrH (a = 1|s) < a. The authors assumed that negative ethical decisions occur and programed the RL to evade negative decisions by imposing penalties to the learner. 
+
+• Positive ethical decisions: Represented what machines should do but do not do such as attending to injured people while doing their own tasks.  PrQ(a = 1|s) < PrH (a = 1|s) stood for the situation where humans are partial to a specific decision in comparison to the AI agent,  and PrH (a = 1|s) > τp indicated that this decision is actually ideal for humans.
+
+
+Experiments
+The authors demonstrated the ethics shaping algorithm through three experiments that mimic everyday tasks: Grab a Milk, Driving and Avoiding, and Driving and Rescuing. The main advantage is that the number of states is larger and therefore can be more closely related to the real-world scenarios. 
+For example, in the Milk scenario: 
+o	The authors task the robot to obtain a container of milk as quick as possible, with walls and other objects in the room. The robot was penalized for crossing the most time-consuming path i.e. a non-crying baby or facing a wall and rewarded for soothing crying babies and obtaining the milk. Results: Over time the robot soothed more crying babies and took less steps compared to humans on the pathway to obtain the milk. 
+
+
+
+Conclusion and Application
+Ethics shaping allows reinforcement learners the capacity to achieve expected goals and fulfill ethical rules. This is accomplished with the use of reward shaping and stochastic policy from human data to balance ethical behavior and performance pursuit by providing additional reward. The reward is given if the move is related to ethics identified by integrated human policy. It can be integrated into other reinforcement learning algorithms since most of the reinforcement learning frameworks rely on reward functions. 
+The authors’ three experiments simulated real-world implications and demonstrated the capability of ethics shaping to outperform human policies with respect to positive ethical decisions since reinforcement learners provide thorough plans even only local information is given. 
