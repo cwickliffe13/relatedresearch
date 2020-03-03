@@ -1,4 +1,6 @@
-# relatedresearchConnor W. Coley (B.S., Caltech; Ph.D., MIT; currently Assistant Professor of Chemical Engineering at MIT)
+# relatedresearch
+
+Connor W. Coley (B.S., Caltech; Ph.D., MIT; currently Assistant Professor of Chemical Engineering at MIT)
 Natalie S. Eyke (B.S., University of Michigan; working on Ph.D. at MIT)
 Klavs F. Jensen (Professor, Chemical Engineering, MIT)
 The importance of automation in chemical science experiments lies in its ability to speed up the discovery process with few errors and human intervention. Automation provides inputs such as a new synthetic process, model, or molecule, and outputs which may include the outputs streamlining drug’s performance on chemical assays, or the model’s predictive performance. This research is important because human-guided drug discovery research and prone to errors, and though a computer model cannot identify a good therapeutic, automation can speed up certain aspects of drug discovery. 
@@ -57,3 +59,4 @@ The discovery process of new synthetic pathways (precursor to producing a molecu
 Conclusion
 Autonomous scientific discovery has yet to fully manifest particularly in the chemical sciences. The limitations of experiments, it can by improve the levels of outputs and limit the burden of human intervention in manual tasks. The authors’ guidelines for autonomous scientific discovery can help researchers accelerate workflows in the laboratory and eventually produce therapeutics drugs and other human-based applications. Since few discoveries have full an autonomous process, human intervention is still necessary. While few studies identify the search space definition for autonomous discovery requires significant human input. The human developer’s role is still significant -- to formulate the discovery problem, an effective representation, and transform the output into meaningful scientific results. 
 Overall, this paper can inform Emergent.Bio on what may constitute an autonomous discovery through provided guidelines and examples of previous scientific work that uses automation in biomedical/biochemical models. This work relates to Emergent.Bio as the company seeks to predict markers by querying markers rather than behaviors. An empirical computer engine could run experiments and simulations (based on public information available from drug discovery databases, for example) and crunch the numbers to yield novel insights and advance the field. This work could occur in conjunction with research labs to speed up drug discovery and help accelerate drug discovery.
+=======
